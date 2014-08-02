@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <me.roy.input.view.WrapContentHeightViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/page_indicator"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <it.sephiroth.android.library.widget.HListView
+            xmlns:hlv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/h_list_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:divider="#DDDDDD"
+            android:listSelector="@drawable/orca_composer_tab_active"
+            android:choiceMode="singleChoice"
+            hlv:hlv_dividerWidth="1dp"
+            />
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn"
+            android:src="@drawable/orca_emoji_backspace_back_normal"
+            />
+    </LinearLayout>
+</LinearLayout>
