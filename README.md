@@ -8,4 +8,5 @@ This is a demo that shows how to use emoji.
 
 
 #Sample
-You can download sample apk from https://github.com/chenupt/Android-Emoji/raw/master/sample.apk
+You can download the sample apk from [here](https://github.com/chenupt/Android-Emoji/raw/master/sample.apk "sample")
+
